@@ -13,7 +13,8 @@ module Lita
       end
 
       def respond_with_double(response)
-        # Read up on the Ruby MatchData class for more options n = response.match_data.captures.first
+        # Read up on the Ruby MatchData class for more options
+        n = response.match_data.captures.first
         n = Integer(n)
         response.reply "#{n} + #{n} = #{double_number n}"
       end
